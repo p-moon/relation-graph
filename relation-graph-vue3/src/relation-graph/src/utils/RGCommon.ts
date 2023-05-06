@@ -88,7 +88,7 @@ export const devLog = (...args: any[]) => {
 export const relationGraphVersion = version
 export const relationGraphVersionInfo = () => {
   console.log(
-    `%c relation-graph/vue3 %c Version v${version} %c More info: https://github.com/seeksdream/relation-graph %c`,
+    `%c JDK-Plus %c https://jdk.plus %c More info: https://github.com/JDK-Plus %c`,
     'background:#35495e ; padding: 1px; border-radius: 3px 0 0 3px;  color: #fff',
     'background:#41b883 ; padding: 1px; border-radius: 0 3px 3px 0;  color: #fff',
     'background:#fff ; padding: 1px; border-radius: 0 3px 3px 0;  color: #41b883',

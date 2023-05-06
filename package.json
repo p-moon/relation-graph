@@ -7,21 +7,6 @@
   "unpkg": "vue2/relation-graph.umd.js",
   "types": "vue2/index.d.ts",
   "exports": {
-    ".": {
-      "types": "vue2/index.d.ts",
-      "import": "vue2/relation-graph.mjs",
-      "require": "vue2/relation-graph.umd.js"
-    },
-    "./react": {
-      "import": "react/relation-graph.mjs",
-      "require": "react/relation-graph.umd.js",
-      "types": "react/index.d.ts"
-    },
-    "./vue2": {
-      "import": "vue2/relation-graph.mjs",
-      "require": "vue2/relation-graph.umd.js",
-      "types": "vue2/index.d.ts"
-    },
     "./vue3": {
       "import": "vue3/relation-graph.mjs",
       "require": "vue3/relation-graph.umd.js",
@@ -29,10 +14,7 @@
     }
   },
   "scripts": {
-    "build-vue2": "cd ./relation-graph-vue2 && yarn build && cp ../typings/RelationGraph.d.ts ../vue2/RelationGraph.d.ts && cp ../typings/vue2.d.ts ../vue2/index.d.ts",
-    "build-vue3": "cd ./relation-graph-vue3 && yarn build && cp ../typings/RelationGraph.d.ts ../vue3/RelationGraph.d.ts && cp ../typings/vue3.d.ts ../vue3/index.d.ts",
-    "build-react": "cd ./relation-graph-react && yarn build && cp ../typings/RelationGraph.d.ts ../react/RelationGraph.d.ts && cp ../typings/react.d.ts ../react/index.d.ts",
-    "build-all": "yarn build-vue2 && yarn build-vue3 && yarn build-react"
+    "build": "cd ./relation-graph-vue3 && yarn build && cp ../typings/RelationGraph.d.ts ../vue3/RelationGraph.d.ts && cp ../typings/vue3.d.ts ../vue3/index.d.ts"
   },
   "author": "seeks <seeksdream@qq.com>",
   "license": "MIT",
@@ -57,8 +39,12 @@
     "url": "https://github.com/seeksdream/relation-graph/issues"
   },
   "dependencies": {
+    "@vitejs/plugin-vue": "^4.2.1",
     "html2canvas": "^1.4.1",
-    "screenfull": "^5.1.0"
+    "screenfull": "^5.1.0",
+    "vite": "^4.3.5",
+    "vite-plugin-style-inject": "0.0.1",
+    "yarn": "^1.22.19"
   },
   "devDependencies": {
     "@types/node": "*",

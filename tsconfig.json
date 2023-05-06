@@ -23,7 +23,7 @@
       "@relation-graph-vue3/*": ["src/*"]
     }
   },
-  "include": ["relation-graph-vue2/src", "relation-graph-vue3/src",
+  "include": ["relation-graph-vue3/src",
     "typings/components.d.ts",
     "relation-graph-vue3/shims-vue.d.ts",
     "typings/env.d.ts"

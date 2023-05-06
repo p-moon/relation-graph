@@ -333,6 +333,9 @@ export declare interface RelationGraphInstance {
   getTextTransform(thisRelation: RGLine, x: number, y: number, rotate: number)
   createLinePath(link: RGLink, relationData: RGLine, ri: number)
   printGraphJsonData()
+  setDefaultLineShape(optionValue: RGLineShape)
+  setDefaultJunctionPoint(optionValue: RGJunctionPoint)
+
 }
 export declare type RGRefreshCallback = (graphInstance: RelationGraphInstance) => void
 export declare type RGPosition = {
